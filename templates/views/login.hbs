@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>csslink}}
+    <title>Login_page</title>
+</head>
+<body>
+{{>navbar}}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6 bg-light m-auto">
+                <form action="/login" method="POST">
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope fa-x"></i></span>
+
+                        </div>
+                        <input type="text" name="email1" placeholder="Email" required class="form-control">
+                    </div>
+
+                        <div class="form-group input-group">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-lock fa-x"></i></span>
+    
+                            </div>
+                            <input type="text" name="pass1" placeholder="Password" required class="form-control">
+    
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" name="sub1" value="Login" class="btn btn-outline-primary mx-2">
+
+                        <a href="/sign_up" class="btn btn-success mx-3">Create Account</a>
+                    </div>
+
+
+
+                </form>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    {{>footer}}
+    {{>script}}
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>csslink}}
+</head>
+<body>
+    {{>navbar}}
+<div class="contaniner mt-3">
+    <div class="row">
+        <div class="col-lg-6 bg-light m-auto">
+            <form action="/sign_up" method="POST">
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user fa-x"></i></span>
+                    </div>
+             <input type="text" name="fname"  placeholder="Full Name" 
+             class="form-control">
+                </div>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope fa-x"></i></span>
+                    </div>
+             <input type="text" name="email"  placeholder="Email_ Id" 
+             class="form-control">
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone-alt fa-x"></i></span>
+                    </div>
+             <input type="text" name="phone"  placeholder="Phone " 
+             class="form-control">
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock fa-x"></i></span>
+                    </div>
+             <input type="text" name="pass"  placeholder="Password" 
+             class="form-control">
+                </div>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock fa-x"></i></span>
+                    </div>
+             <input type="text" name="cpass"  placeholder="Conform Password" 
+             class="form-control">
+                </div>
+                <input type="submit" name='sub' value="Sign Up" class="btn btn-outline-success justify-content-center">
+
+
+            </form>
+
+            <div class="">
+                <p>have you accout login here</p> 
+                <a href="/login">Click here</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+  {{>footer}}
+    {{>script}}
+</body>
+</html>

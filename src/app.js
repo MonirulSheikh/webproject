@@ -17,7 +17,7 @@ const view_path=path.join(__dirname,'../templates/views')
 
 const partial_path=path.join(__dirname,'../templates/partials')
 //const auth=require('./middleware/auth')
-
+const port =process.env.Port
 app.use(cookieParser())
 hbs.registerPartials(partial_path);
 app.use(express.static(static_path))
@@ -145,4 +145,4 @@ console.log("log out successful")
 
 })
 */
-app.listen(8400)
+app.listen(port)

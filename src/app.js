@@ -17,7 +17,7 @@ const view_path=path.join(__dirname,'../templates/views')
 
 const partial_path=path.join(__dirname,'../templates/partials')
 //const auth=require('./middleware/auth')
-const port =process.env.Port
+const port =process.env.PORT ||8400
 app.use(cookieParser())
 hbs.registerPartials(partial_path);
 app.use(express.static(static_path))
